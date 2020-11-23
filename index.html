@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" id="root">
         <div class="sidebar">
             <div class="sidebar-top">
                 <div class="header">
@@ -42,14 +42,17 @@
                 </div>
             </div>
             <div class="list-contact">
-                <div class="item-contact d-flex align-items-center">
-                    <div class="photo-contact d-flex align-items-center">
-                        <img src="img/avatar_2.jpg">
-                        <div class="contact-information">
-                            <h6>Nome Utente</h6>
-                            <p>Last access</p>
+
+                <div v-for="n in contacts.length" class="item-contact d-flex align-items-center" :class="{'active':(currentContact == n-1)}">
+                    <a @click="currentContact=n-1" href="#">
+                        <div class="photo-contact d-flex align-items-center">
+                            <img :src="contacts[n-1].avatar">
+                            <div class="contact-information">
+                                <h6>{{ contacts[n-1].name }}</h6>
+                                <p>{{ contacts[n-1].lastSeen }}</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -57,10 +60,10 @@
             <div class="main-header">
                 <div class="main-information">
                     <div class="user-main-information">
-                        <img src="img/avatar_5.jpg">
+                        <img :src="contacts[currentContact].avatar">
                         <div class="main-text-information">
-                            <h6>Nome Utente</h6>
-                            <p>Last seen</p>
+                            <h6>{{ contacts[currentContact].name }}</h6>
+                            <p>{{ contacts[currentContact].lastSeen }}</p>
                         </div>
                     </div>
                     <div class="main-action">
@@ -71,7 +74,16 @@
                 </div>
             </div>
             <div class="main-body">
-
+                <div v-for="nMessage in contacts[currentContact].messages.length" 
+                         :class="{'messages-recive':(contacts[currentContact].messages[nMessage-1].recived === 1),
+                                 'messages-sent':(contacts[currentContact].messages[nMessage-1].recived === 0)}">
+                        <div class="msg-box" 
+                        :class="{'recive':(contacts[currentContact].messages[nMessage-1].recived === 1),
+                                'sent':(contacts[currentContact].messages[nMessage-1].recived === 0)}">
+                        <p v-html="contacts[currentContact].messages[nMessage-1].textMessage "></p>
+                        <span>{{ contacts[currentContact].messages[nMessage-1].date }}</span>
+                    </div>
+                </div>
             </div>
             <div class="main-footer">
                 <div class="emoticon">
@@ -88,6 +100,7 @@
 
 
     </div>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
