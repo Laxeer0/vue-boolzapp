@@ -73,7 +73,7 @@
                     </div>
                 </div>
             </div>
-            <div class="main-body">
+            <div class="main-body" id="bodyMessages">
                 <div v-for="message in currentContact.messages" 
                          :class="{'messages-recive':(message.recived === 1),
                                  'messages-sent':(message.recived === 0)}">
