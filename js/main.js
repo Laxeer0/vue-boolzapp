@@ -127,7 +127,6 @@ var root = new Vue({
         message: [],
         search: '',
         currentContact: contacts[0],
-        sendMessage: '',
         txtInput: '',
     },
     methods: {
