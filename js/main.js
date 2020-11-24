@@ -1,17 +1,17 @@
 const contacts = [
     {
         name: "Pietro",
-        avatar:"img/avatar_2.jpg",
+        avatar: "img/avatar_2.jpg",
         lastSeen: "23/11/2020 12:02",
         messages: [
             {
                 textMessage: "Ciao io sono Giuseppe tu?",
-                date:"23/11/2020 11:00",
+                date: "23/11/2020 11:00",
                 recived: 0
             },
             {
                 textMessage: "Ciao io sono Pietro.",
-                date:"23/11/2020 14:00",
+                date: "23/11/2020 14:00",
                 recived: 1
             }
         ]
@@ -19,17 +19,17 @@ const contacts = [
     },
     {
         name: "Giacomo",
-        avatar:"img/avatar_3.jpg",
+        avatar: "img/avatar_3.jpg",
         lastSeen: "23/11/2020 12:02",
         messages: [
             {
                 textMessage: "Ciao io sono Giuseppe tu?",
-                date:"23/11/2020 11:00",
+                date: "23/11/2020 11:00",
                 recived: 0
             },
             {
                 textMessage: "Ciao io sono Giacomo.",
-                date:"23/11/2020 14:00",
+                date: "23/11/2020 14:00",
                 recived: 1
             }
         ]
@@ -37,17 +37,17 @@ const contacts = [
     },
     {
         name: "Paolo",
-        avatar:"img/avatar_4.jpg",
+        avatar: "img/avatar_4.jpg",
         lastSeen: "23/11/2020 12:02",
         messages: [
             {
                 textMessage: "Ciao io sono Giuseppe tu?",
-                date:"23/11/2020 11:00",
+                date: "23/11/2020 11:00",
                 recived: 0
             },
             {
                 textMessage: "Ciao io sono Paolo.ashdofhjasodfjuasdfjisfjdpasdojpfipkiidshdlpodhiljoiushafdiohhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh",
-                date:"23/11/2020 14:00",
+                date: "23/11/2020 14:00",
                 recived: 1
             }
         ]
@@ -55,17 +55,17 @@ const contacts = [
     },
     {
         name: "Nino",
-        avatar:"img/avatar_5.jpg",
+        avatar: "img/avatar_5.jpg",
         lastSeen: "23/11/2020 12:02",
         messages: [
             {
                 textMessage: "Ciao io sono Giuseppe tu?",
-                date:"23/11/2020 11:00",
+                date: "23/11/2020 11:00",
                 recived: 0
             },
             {
-                textMessage: "Ciao io sono Nino D'Angelo e ti canterò una canzone.", 
-                date:"23/11/2020 14:00",
+                textMessage: "Ciao io sono Nino D'Angelo e ti canterò una canzone.",
+                date: "23/11/2020 14:00",
                 recived: 1
             },
             {
@@ -103,8 +103,8 @@ const contacts = [
                 Pop corn e patatine pe ce arricurda <br>\
                 Chella ca si stata e chella ca nun vo turna <br>\
                 Tu la mia bambina pane ammore e liberta <br>\
-                Io con il mio sciocco sogno di felicita'", 
-                date:"23/11/2020 14:03",
+                Io con il mio sciocco sogno di felicita'",
+                date: "23/11/2020 14:03",
                 recived: 1
             },
 
@@ -112,15 +112,52 @@ const contacts = [
 
     },
 ]
+const loggedUser = {
+    name: "Giuseppe Zerino",
+    avatar: "img/avatar_1.jpg",
+    lastSeen: "24/11/2020 10:00"
+
+}
 
 var root = new Vue({
     el: '#root',
     data: {
-      currentContact: 0,
-      contacts
+        contacts: [...contacts],
+        loggedUser: { ...loggedUser },
+        message: [],
+        search: '',
+        currentContact: contacts[0],
+        sendMessage: '',
+        txtInput: '',
     },
     methods: {
-      
-      }
-    
-    });
+
+    },
+    methods: {
+        submit() {
+            this.currentContact.messages.push({
+                textMessage: this.txtInput,
+                date: Date.dateString,
+                recived: 0
+            });
+
+            this.txtInput='';
+
+            setTimeout(() => 
+                this.currentContact.messages.push({
+                    textMessage: "bellazzzi",
+                    date: Date.dateString,
+                    recived: 1
+                })
+            ,5000);
+        }
+    },
+    computed: {
+        filterList() {
+            return this.contacts.filter(contact => {
+                return contact.name.toLowerCase().includes(this.search.toLowerCase())
+            })
+        }
+    }
+
+});

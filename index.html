@@ -15,10 +15,10 @@
             <div class="sidebar-top">
                 <div class="header">
                     <div class="photo-item d-flex align-items-center">
-                        <img class="photo-picture" src="img/avatar_1.jpg">
+                        <img class="photo-picture" :src="loggedUser.avatar">
                         <div class="user-information d-flex">
-                            <h6>Nome Utente</h6>
-                            <p>Last seen...</p>
+                            <h6>{{loggedUser.name}}</h6>
+                            <p>{{loggedUser.lastSeen}}</p>
                         </div>
                     </div>
                     <div class="icon-control d-flex align-items-center">
@@ -38,18 +38,18 @@
 
                 <div class="search-panel d-flex align-items-center">
                     <input class="form-control search-item fal" type="search"
-                        placeholder="&#xf002; Cerca o inizia una nuova chat" aria-label="Search">
+                        placeholder="&#xf002; Cerca o inizia una nuova chat" aria-label="Search" v-model="search">
                 </div>
             </div>
             <div class="list-contact">
 
-                <div v-for="n in contacts.length" class="item-contact d-flex align-items-center" :class="{'active':(currentContact == n-1)}">
-                    <a @click="currentContact=n-1" href="#">
+                <div v-for="contact in filterList" class="item-contact d-flex align-items-center" :class="{'active':(currentContact == contact)}">
+                    <a @click="currentContact=contact" href="#">
                         <div class="photo-contact d-flex align-items-center">
-                            <img :src="contacts[n-1].avatar">
+                            <img :src="contact.avatar">
                             <div class="contact-information">
-                                <h6>{{ contacts[n-1].name }}</h6>
-                                <p>{{ contacts[n-1].lastSeen }}</p>
+                                <h6>{{ contact.name }}</h6>
+                                <p>{{ contact.lastSeen }}</p>
                             </div>
                         </div>
                     </a>
@@ -60,10 +60,10 @@
             <div class="main-header">
                 <div class="main-information">
                     <div class="user-main-information">
-                        <img :src="contacts[currentContact].avatar">
+                        <img :src="currentContact.avatar">
                         <div class="main-text-information">
-                            <h6>{{ contacts[currentContact].name }}</h6>
-                            <p>{{ contacts[currentContact].lastSeen }}</p>
+                            <h6>{{ currentContact.name }}</h6>
+                            <p>{{ currentContact.lastSeen }}</p>
                         </div>
                     </div>
                     <div class="main-action">
@@ -74,14 +74,14 @@
                 </div>
             </div>
             <div class="main-body">
-                <div v-for="nMessage in contacts[currentContact].messages.length" 
-                         :class="{'messages-recive':(contacts[currentContact].messages[nMessage-1].recived === 1),
-                                 'messages-sent':(contacts[currentContact].messages[nMessage-1].recived === 0)}">
+                <div v-for="message in currentContact.messages" 
+                         :class="{'messages-recive':(message.recived === 1),
+                                 'messages-sent':(message.recived === 0)}">
                         <div class="msg-box" 
-                        :class="{'recive':(contacts[currentContact].messages[nMessage-1].recived === 1),
-                                'sent':(contacts[currentContact].messages[nMessage-1].recived === 0)}">
-                        <p v-html="contacts[currentContact].messages[nMessage-1].textMessage "></p>
-                        <span>{{ contacts[currentContact].messages[nMessage-1].date }}</span>
+                        :class="{'recive':(message.recived === 1),
+                                'sent':(message.recived === 0)}">
+                        <p v-html="message.textMessage "></p>
+                        <span>{{ message.date }}</span>
                     </div>
                 </div>
             </div>
@@ -90,7 +90,7 @@
                     <i class="far fa-smile fa-lg"></i>
                 </div>
                 <div class="text-send">
-                    <input type="text" class="form-control text-control" placeholder="Scrivi un messaggio">
+                    <input type="text" class="form-control text-control" placeholder="Scrivi un messaggio" v-on:keyup.enter="submit" v-model="txtInput">
                 </div>
                 <div class="attached">
                     <i class="fas fa-paperclip fa-lg"></i>
