@@ -43,7 +43,8 @@
             </div>
             <div class="list-contact">
 
-                <div v-for="contact in filterList" class="item-contact d-flex align-items-center" :class="{'active':(currentContact == contact)}">
+                <div v-for="contact in filterList" class="item-contact d-flex align-items-center"
+                    :class="{'active':(currentContact == contact)}">
                     <a @click="currentContact=contact" href="#">
                         <div class="photo-contact d-flex align-items-center">
                             <img :src="contact.avatar">
@@ -74,12 +75,16 @@
                 </div>
             </div>
             <div class="main-body" id="bodyMessages">
-                <div v-for="message in currentContact.messages" 
-                         :class="{'messages-recive':(message.recived === 1),
-                                 'messages-sent':(message.recived === 0)}">
-                        <div class="msg-box" 
-                        :class="{'recive':(message.recived === 1),
-                                'sent':(message.recived === 0)}">
+                <div v-for="(message,index) in currentContact.messages" :class="message.recived ? 'messages-recive' :  'messages-sent'">
+
+                    <div class="msg-box"  :class="message.recived ? 'recive' :  'sent'">
+
+                    <div class="dropdown">
+                        <button class="btn-dropdown"><i class="fal fa-chevron-down"></i></button>
+                        <div class="dropdown-content">
+                            <a @click="removeMessage(index)">Rimuovi messaggio</a>
+                        </div></div>
+
                         <p v-html="message.textMessage "></p>
                         <span>{{ message.date }}</span>
                     </div>
@@ -90,7 +95,8 @@
                     <i class="far fa-smile fa-lg"></i>
                 </div>
                 <div class="text-send">
-                    <input type="text" class="form-control text-control" placeholder="Scrivi un messaggio" v-on:keyup.enter="submit" v-model="txtInput">
+                    <input type="text" class="form-control text-control" placeholder="Scrivi un messaggio"
+                        v-on:keyup.enter="addMessage" v-model="txtInput">
                 </div>
                 <div class="attached">
                     <i class="fas fa-paperclip fa-lg"></i>

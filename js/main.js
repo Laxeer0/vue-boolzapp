@@ -10,381 +10,6 @@ const contacts = [
                 recived: 0
             },
             {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
-                textMessage: "Ciao io sono Giuseppe tu?",
-                date: "23/11/2020 11:00",
-                recived: 0
-            },
-            {
                 textMessage: "Ciao io sono Pietro.",
                 date: "23/11/2020 14:00",
                 recived: 1
@@ -495,7 +120,6 @@ const loggedUser = {
 }
 
 
-
 var root = new Vue({
     el: '#root',
     data: {
@@ -514,10 +138,10 @@ var root = new Vue({
         })
     },
     methods: {
-        submit() {
+        addMessage() {
             this.currentContact.messages.push({
                 textMessage: this.txtInput,
-                date: Date.dateString,
+                date: '',
                 recived: 0
             });
 
@@ -526,10 +150,13 @@ var root = new Vue({
             setTimeout(() =>
                 this.currentContact.messages.push({
                     textMessage: "bellazzzi",
-                    date: Date.dateString,
+                    date:'',
                     recived: 1
                 })
-                , 5000);
+                , 1000);
+        },
+        removeMessage(index){
+            this.currentContact.messages.splice(index,1);
         }
     },
     updated(){
@@ -550,3 +177,6 @@ var root = new Vue({
 
 });
 
+var d = new Date();
+var date = d.getDay() +"/"+ d.getMonth() +"/"+ d.getFullYear() + " " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds(); 
+console.log(date);
