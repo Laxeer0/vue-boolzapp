@@ -141,7 +141,7 @@ var root = new Vue({
         addMessage() {
             this.currentContact.messages.push({
                 textMessage: this.txtInput,
-                date: '',
+                date: date,
                 recived: 0
             });
 
@@ -150,7 +150,7 @@ var root = new Vue({
             setTimeout(() =>
                 this.currentContact.messages.push({
                     textMessage: "bellazzzi",
-                    date:'',
+                    date:date,
                     recived: 1
                 })
                 , 1000);
